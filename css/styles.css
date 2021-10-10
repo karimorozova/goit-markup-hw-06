@@ -543,6 +543,7 @@ border: 1px solid rgba(255, 255, 255, 0.3);
 border-radius: 4px;
 background-color: transparent;
 color: rgba(255, 255, 255, 0.6);
+cursor: pointer;
 }
 .input::placeholder {
     font-size: 16px;
@@ -781,6 +782,7 @@ transition: border 250ms var(--timing-function);
     margin-bottom: 10px;
 }
 .form-label {
+    position: relative;
     
     display: block;
    font-size: 12px;
@@ -789,16 +791,12 @@ letter-spacing: 0.01em;
 color: var(--secondary-text-color);
 cursor: pointer;
 }
-.input-container {
-    position: relative;
-    margin-top: 4px;
 
-
-}
 .form-input {
     display: flex;
     align-items: center;
     width: 100%;
+    margin-top: 4px;
     padding: 11px 12px;
     padding-left: 34px;
     font-size: 12px;
@@ -818,7 +816,7 @@ transition: border-color 250ms var(--timing-function);
     display: flex;
     align-items: center;
     left: 12px;
-    top: 11px;
+    top: 27px;
     transition: fill 250ms var(--timing-function);
 }
 .form-input:focus {
