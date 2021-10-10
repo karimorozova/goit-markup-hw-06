@@ -480,28 +480,39 @@
                 </div>
                 </label>
             </div>
-            <div class="form-field comment-field">
+            <div class="comment-field">
                 <label class="form-label">Комментарий
-                    <textarea name="comment" rows="8" class="comment" placeholder="Введите текст"></textarea>
-                    <!-- <textarea
-                     name="comment" 
-                 rows="7" 
-                 class="form-input comment"
-                 placeholder="Введите текст">
-                </textarea> -->
+                    <textarea
+                     name="comment"
+                      rows="9" 
+                      class="form-input comment" 
+                      placeholder="Введите текст"></textarea>
+                    
                 </label>
             </div>
-            <div class="form-field">
-                <label class="form-label">
-                    <input type="checkbox" name="policy" class="form-input">
-                    Соглашаюсь с рассылкой и принимаю <a href="">Условия договора</a> 
+            
+                <div class="checkbox-container">
+                <label class="checkbox-label">
+                    <input type="checkbox" name="policy" class="checkbox-input">
+                    Соглашаюсь с рассылкой и принимаю <a href="" class="poicy-link">Условия договора</a> 
                 </label>
+                <svg class="check-icon" width="16" height="15">
+                    <use href="./images/icons.svg#icon-check"></use>
+                </svg>
+                <svg class="check-icon" width="16" height="15">
+                    <use href="./images/icons.svg#icon-checkbox"></use>
+                </svg>
+            
             </div>
+
+            <button type="submit" class="button submit-btn form-btn">Отправить</button>
+            
             </form>
             <button type="button" class="modal-btn" data-modal-close>
                 <svg class="modal-icon" width="11" height="11">
                     <use href="./images/icons.svg#icon-close"></use>
                 </svg>
+                
             </button>
         </div>
         

@@ -553,8 +553,9 @@ color: rgba(255, 255, 255, 0.6);
 .submit-btn {
     display: flex;
     align-items: center;
+    justify-content: center;
     margin: 0;
-    padding: 10px 28px;
+    padding: 10px;
     min-width: 200px;
 min-height: 50px;
 background-color: var(--accent-color);
@@ -784,7 +785,7 @@ transition: border 250ms var(--timing-function);
     margin-bottom: 4px;
    font-size: 12px;
 line-height: 1.16;
-letter-spacing: 0.01;
+letter-spacing: 0.01em;
 color: var(--secondary-text-color);
 }
 .input-container {
@@ -800,7 +801,7 @@ color: var(--secondary-text-color);
     padding-left: 34px;
     font-size: 12px;
 line-height: 1.16;
-letter-spacing: 0.01;
+letter-spacing: 0.01em;
 color: var(--secondary-text-color);
     
 }
@@ -812,16 +813,57 @@ color: var(--secondary-text-color);
     left: 12px;
     top: 11px;
 }
+.comment-field {
+    margin-bottom: 20px;
+
+}
 .comment {
     padding: 12px 16px;
 }
 .comment::placeholder {
     font-size: 14px;
 line-height: 1.14;
-letter-spacing: 0.01;
+letter-spacing: 0.01em;
 color:rgba(117, 117, 117, 0.5);
 }
-.comment-field {
-    margin-bottom: 20px;
+
+.checkbox-container {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 30px;
+}
+.checkbox-label {
+    font-size: 14px;
+    line-height: 1.46;
+    color: var(--secondary-text-color)
 
 }
+.checkbox-input {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    padding: 0;
+    overflow: hidden;
+    border: 0;
+    clip: rect(0 0 0 0);
+
+}
+.poicy-link {
+    color: var(--accent-color);
+
+}
+.check-icon {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.form-btn {
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+    text-align: center;
+}
+
