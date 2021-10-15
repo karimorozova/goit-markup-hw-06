@@ -837,7 +837,7 @@ transition: border-color 250ms var(--timing-function);
 .comment {
     margin-top: 4px;
     padding: 12px 16px;
-    max-height: 120px;
+    min-height: 120px;
 }
 .comment::placeholder {
     font-size: 14px;
